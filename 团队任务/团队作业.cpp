@@ -115,12 +115,12 @@ int main(){
     		num++;
 		}
 	}
-	printf("闰年数为：%d\n",num);
+//	printf("闰年数为：%d\n",num);     闰年数 
 	int day1=sum(bornD,bornM,bornY);
 	int day2=sum(nowD,nowM,nowY);
-	printf("%d\t %d\n",day1,day2);
-	int day=(nowY-bornY)*365+num-day1+day2;//（测定年-出生年）×365+闰年数-（1月1日至生日天数）+（1月1日至测定天数）
-	printf("%d\n",day); 
+//	printf("%d\t %d\n",day1,day2);    1月1日至生日天数       1月1日至生日天数
+	int day=(nowY-bornY)*365+num-day1+day2;//（测定年-出生年）×365+闰年数-（1月1日至生日天数）+（1月1日至生日天数）
+//	printf("%d\n",day);  总天数 
 	int physical=day%23;
 	int mood=day%28;
 	int intelligence=day%33;
@@ -165,8 +165,8 @@ int main(){
 		printf("智力处在低潮期第%d天\n",intelligence);
 	} 
 	
-	printf("年=%d\t 月=%d\t 日=%d\n",bornY,bornM,bornD);
-	printf("年=%d\t 月=%d\t 日=%d",nowY,nowM,nowD);
+//	printf("年=%d\t 月=%d\t 日=%d\n",bornY,bornM,bornD);
+//	printf("年=%d\t 月=%d\t 日=%d",nowY,nowM,nowD);
 	return 0;
 }
 
